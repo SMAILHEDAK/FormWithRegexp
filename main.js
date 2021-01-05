@@ -38,3 +38,14 @@ function passMatch(){
         document.getElementById("errorPass2").innerHTML = "";
     }
     }
+
+//Checking if checkbox is ticked
+function checkBoxTest() {
+    var x = document.getElementById("acceptRules").checked;
+    if(x == false){
+    document.getElementById("errorTicked").innerHTML = "You haven't agreed to the policy.";
+    }
+    else{
+        document.getElementById("errorTicked").innerHTML = "";
+    }
+  }

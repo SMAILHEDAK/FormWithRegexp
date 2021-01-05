@@ -22,12 +22,13 @@
           <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
           <span style="color: #D8000C;" id="errorPass"></span>
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pswRep" required>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pswRep" onblur="passMatch()" required>
           <span style="color: #D8000C;" id="errorPass2"></span>
           <hr>
       
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          <button type="button" class="registerbtn" onclick="checkEmail();checkPsw();passMatch()">Register</button>
+          <input type="checkbox" ID="acceptRules">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</input required>
+          <span style="color: #D8000C;" id="errorTicked"></span>
+          <button type="button" class="registerbtn" onclick="checkEmail();checkPsw();checkBoxTest()">Register</button>
         </div>
       
         <div class="container signin">
